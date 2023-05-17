@@ -1,4 +1,4 @@
-from class_tv import view, get_volume, get_channel
+from class_tv import TV
 
 # Create 2 new TVs:
 

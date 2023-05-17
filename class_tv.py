@@ -8,6 +8,7 @@ class TV:
     def view(self):
         print("====================\nTV information\n====================")
         print("TV name: ", self.name, "\nCurrent volume: ", self.volume, "\nCurrent channel: ", self.channel)
+
         if self.is_on is True:
             print("TV is on?: YES\n")
         else:
@@ -18,4 +19,6 @@ class TV:
     
     def get_channel(self):
         print("the current channel of ", self.name, " is ", self.channel)
+    
+    
     

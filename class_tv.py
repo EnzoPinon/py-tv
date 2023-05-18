@@ -37,5 +37,14 @@ class TV:
             else:
                 print("the volume receives is not in an acceptable range of 0-100")
     
+    def turn_on(self):
+        self.is_on = True
+        print(self.name, " has been switched on!")
     
-    
+    def turn_off(self):
+        self.is_on = False
+        print(self.name, " has been switched off!")
+
+    def rename(self, new_name):
+        if not type(new_name) is str:
+            print("The new name of this TV must be a string.")    

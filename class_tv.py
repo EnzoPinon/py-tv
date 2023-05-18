@@ -19,6 +19,23 @@ class TV:
     
     def get_channel(self):
         print("the current channel of ", self.name, " is ", self.channel)
+
+    def set_channel(self, new_channel):
+        if not type(new_channel) is int:
+            print("The new channel must be an integer.")
+        else:
+            self.channel = new_channel
+            print("The new channel of ", self.name, " is now: ", new_channel)
+    
+    def set_volume(self, new_volume):
+        if not type(new_volume) is int:
+            print("The new volume must be an integer.")
+        else:
+            if new_volume >= 0 and new_volume <= 100:
+                self.volume = new_volume
+                print("The new volume of ", self.name, " is now: ", new_volume)
+            else:
+                print("the volume receives is not in an acceptable range of 0-100")
     
     
     

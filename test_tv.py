@@ -57,3 +57,13 @@ tv01.rename("Lucario")
 
 tv02.volume_down()
 tv01.volume_up()
+
+# Demonstration of switching channels forward and backward 
+
+tv01.channel_down()
+tv02.channel_up()
+
+# Print with view again as final status of all TVs as proof that it has been modified with all methods:
+
+tv01.view()
+tv02.view()

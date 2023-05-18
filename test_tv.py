@@ -52,3 +52,8 @@ tv01.rename(False)
 # Demonstration of renaming the TV
 
 tv01.rename("Lucario")
+
+# Demonstration of increasing and decreasing the volume of the TV:
+
+tv02.volume_down()
+tv01.volume_up()

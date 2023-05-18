@@ -18,10 +18,12 @@ tv02.view()
 tv01.get_volume()
 tv02.get_channel()
 
-# Demonstration of error message in setting channel/volume as string
+# Demonstration of error message in setting channel/volume as string or other variables
 tv01.set_channel("hello")
 
-tv02.set_volume("hi")
+tv02.set_volume(20.1)
+
+tv01.set_channel(False)
 
 # Demonstration of error message when setting volume to a number not within the range of 0-100
 
@@ -35,3 +37,18 @@ tv01.get_channel()
 
 tv02.set_volume(50)
 tv02.get_volume()
+
+# Demonstration of TV switched on and off
+
+tv01.turn_on()
+tv02.turn_off()
+
+# Demonstration of error message when other variables are passed to the rename method
+
+tv01.rename(2023)
+tv02.rename(20.2)
+tv01.rename(False)
+
+# Demonstration of renaming the TV
+
+tv01.rename("Lucario")

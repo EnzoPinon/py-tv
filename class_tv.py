@@ -47,4 +47,8 @@ class TV:
 
     def rename(self, new_name):
         if not type(new_name) is str:
-            print("The new name of this TV must be a string.")    
+            print("The new name of this TV must be a string.")
+        else:
+            print("The new name of ", self.name, " is now: ", new_name)
+            self.name = new_name
+                

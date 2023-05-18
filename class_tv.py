@@ -51,4 +51,11 @@ class TV:
         else:
             print("The new name of ", self.name, " is now: ", new_name)
             self.name = new_name
-                
+
+    def volume_up(self):
+        self.volume = self.volume + 1
+        print("The volume of ", self.name, " is raised to: ", self.volume)
+
+    def volume_down(self):
+        self.volume = self.volume - 1
+        print("The volume of ", self.name, " is lowered to: ", self.volume)            

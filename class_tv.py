@@ -58,4 +58,12 @@ class TV:
 
     def volume_down(self):
         self.volume = self.volume - 1
-        print("The volume of ", self.name, " is lowered to: ", self.volume)            
+        print("The volume of ", self.name, " is lowered to: ", self.volume)
+
+    def channel_up(self):
+        self.channel = self.channel + 1
+        print("The channel of ", self.name, " has been switched forward to: ", self.channel)
+
+    def channel_down(self):
+        self.channel = self.channel - 1
+        print("The channel of ", self.name, " ihas been switched backward to: ", self.channel)
